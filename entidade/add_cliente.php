@@ -20,13 +20,15 @@
     <h3>+ Adicionar Cliente +</h3> <br>
     <p>
     <div id="area">
-        <form id="formulario" action="../DAO/insert_cliente.php" method="post">
+        <form id="formulario" action="../persistencia/DAO/insert_cliente.php" method="post">
             <fieldset>
                 <legend>Cadastro de Cliente</legend>
-                <label>Nome:</label> <br><input type="text" name="nome" class="campo_nome"><br>
-                <label>Sobrenome:</label><br> <input type="text" name="sobrenome" class="campo_sobrenome"><br>
-                <label>Endereço:</label><br> <input type="text" name="endereco" class="campo_endereco"><br>
-                <label>Email:</label><br> <input type="text" name="email" class="campo_email"><br>
+                <label>Nome:</label> <br><input type="text" name="nome" class="campo_nome" required="required"><br>
+                <label>Sobrenome:</label><br> <input type="text" name="sobrenome" class="campo_sobrenome"
+                                                     required="required"><br>
+                <label>Endereço:</label><br> <input type="text" name="endereco" class="campo_endereco"
+                                                    required="required"><br>
+                <label>Email:</label><br> <input type="email" name="email" class="campo_email" required="required"><br>
 
                 <input type="submit" name="Enviar" value="enviar" class="campo_enviar">
                 <input type="reset" name="Limpar" value="limpar" class="campo_limpar">
