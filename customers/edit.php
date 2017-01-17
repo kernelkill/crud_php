@@ -12,7 +12,7 @@
   <div class="row">
     <div class="form-group col-md-7">
       <label for="name">Nome / Razão Social</label>
-      <input type="text" class="form-control" name="customer['name']" value="<?php echo $customer['name']; ?>">
+      <input type="text" class="form-control" name="customer['nome']" value="<?php echo $customer['nome']; ?>">
     </div>
 
     <div class="form-group col-md-3">
