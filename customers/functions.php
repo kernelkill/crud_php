@@ -35,7 +35,7 @@ function add() {
     $customer['modified'] = $customer['created'] = $today->format("Y-m-d H:i:s");
     
     save('customers', $customer);
-    header('location: index.php');
+    //header('location: index.php');
   }
 }
 
