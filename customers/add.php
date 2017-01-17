@@ -12,7 +12,7 @@
   <hr />
   <div class="row">
     <div class="form-group col-md-7">
-      <label for="name">Nome / Razão Social</label>
+      <label for="nome">Nome / Razão Social</label>
       <input type="text" class="form-control" name="customer['nome']">
     </div>
 

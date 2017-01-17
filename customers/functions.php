@@ -6,9 +6,6 @@
 	$customers = null;
 	$customer = null;
 
-
-
-
 /**
 *  Listagem de Clientes
 */
@@ -16,6 +13,7 @@ function index() {
 	global $customers;
 	$customers = find_all('customers');
 }
+
 
 /**
  *  Visualização de um Cliente
@@ -60,4 +58,13 @@ function edit() {
   } else {
     header('location: index.php');
   }
+}
+
+/**
+ *  Exclusão de um Cliente
+ */
+function delete($id = null) {
+  global $customer;
+  $customer = remove('customers', $id);
+  header('location: index.php');
 }
