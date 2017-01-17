@@ -20,7 +20,7 @@
     <h3>+ Adicionar Cliente +</h3> <br>
     <p>
     <div id="area">
-        <form id="formulario" action="DAO/insert_cliente.php" method="post">
+        <form id="formulario" action="../DAO/insert_cliente.php" method="post">
             <fieldset>
                 <legend>Cadastro de Cliente</legend>
                 <label>Nome:</label> <br><input type="text" name="nome" class="campo_nome"><br>
