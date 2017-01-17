@@ -1,4 +1,3 @@
-
 <!--/**
  * Created by PhpStorm.
  * User: kachorroski
@@ -19,8 +18,8 @@
 <body>
 <blockquote>
     <h3>+ Adicionar Cliente +</h3> <br>
-<p>
-   <div id="area">
+    <p>
+    <div id="area">
         <form id="formulario" action="DAO/insert_cliente.php" method="post">
             <fieldset>
                 <legend>Cadastro de Cliente</legend>
@@ -30,10 +29,13 @@
                 <label>Email:</label><br> <input type="text" name="email" class="campo_email"><br>
 
                 <input type="submit" name="Enviar" value="enviar" class="campo_enviar">
+                <input type="reset" name="Limpar" value="limpar" class="campo_limpar">
+                <input type="button" name="Cancelar" value="cancelar" class="campo_cancelar"
+                       onclick="location.href='../index.php' ">
             </fieldset>
         </form>
-   </div>
-</p>
+    </div>
+    </p>
 </blockquote>
 
 </body>
