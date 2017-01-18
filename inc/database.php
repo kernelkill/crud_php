@@ -80,6 +80,7 @@ function save($table = null, $data = null) {
     $columns .= trim($key, "'") . ",";
     $values .= "'$value',";
   }
+  
   // remove a ultima virgula
   $columns = rtrim($columns, ',');
   $values = rtrim($values, ',');
