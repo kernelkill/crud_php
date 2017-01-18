@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Cliente <?php echo $customer['id']; ?></h2>
+<h2>Autor <?php echo $customer['id']; ?></h2>
 <hr>
 
 <?php if (!empty($_SESSION['message'])) : ?>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CRUD</title>
+    <title>HQTeCa</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php echo BASEURL; ?>css/bootstrap.min.css">
@@ -28,17 +28,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="<?php echo BASEURL; ?>index.php" class="navbar-brand">CRUD</a>
+          <a href="<?php echo BASEURL; ?>index.php" class="navbar-brand">HQTeCa</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">          
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Clientes <span class="caret"></span>
+                    Autores <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>customers">Gerenciar Clientes</a></li>
-                    <li><a href="<?php echo BASEURL; ?>customers/add.php">Novo Cliente</a></li>
+                    <li><a href="<?php echo BASEURL; ?>customers">Gerenciar Autores</a></li>
+                    <li><a href="<?php echo BASEURL; ?>customers/add.php">Novo Autor</a></li>
                 </ul>
             </li>
           </ul>
