@@ -41,6 +41,15 @@
                     <li><a href="<?php echo BASEURL; ?>customers/add.php">Novo Autor</a></li>
                 </ul>
             </li>
+             <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Titulos <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="<?php echo BASEURL; ?>titulos">Gerenciar Titulos</a></li>
+                    <li><a href="<?php echo BASEURL; ?>titulos/add.php">Novo Titulo</a></li>
+                </ul>
+            </li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
