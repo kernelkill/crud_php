@@ -9,5 +9,5 @@ $titulo = null;
  */
 function index() {
 	global $titulos;
-	$titulos = find_all('customers');
+	$titulos = find_all('titulos');
 }
