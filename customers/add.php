@@ -75,11 +75,11 @@
       <input type="text" class="form-control" name="customer['ie']">
     </div>
     
-    <div class="form-group col-md-2">
+    <!--<div class="form-group col-md-2">
       <label for="campo3">UF</label>
       <input type="text" class="form-control">
     </div>
-  </div>
+  </div>-->
   
   <div id="actions" class="row">
     <div class="col-md-12">
