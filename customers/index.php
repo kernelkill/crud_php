@@ -46,7 +46,7 @@
 		<td><?php echo $customer['id']; ?></td>
 		<td><?php echo $customer['nome']; ?></td>
 		<td><?php echo $customer['cpf_cnpj']; ?></td>
-		<td>00 0000-0000</td>
+		<td><?php echo $customer['phone']; ?></td>
 		<td><?php echo $customer['modified']; ?></td>
 		<td class="actions text-right">
 			<a href="view.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
