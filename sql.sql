@@ -36,21 +36,24 @@ ALTER TABLE customers
 ALTER TABLE customers
 MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
-INSERT INTO `customers` (`id`, `nome`, `cpf_cnpj`, `birthdate`, `address`, 
-`hood`, `zip_code`, `city`, `state`, `phone`, `mobile`, `ie`, `created`, `modified`) 
-VALUES ('0', 'Fulano de Tal', '123.456.789-00', '1989-01-01', 'Rua da Web, 123', 
-'Internet', '1234568', 'Teste', 'Teste', '5555555', '55555555', '123456', 
-'2016-05-24 00:00:00', '2016-05-24 00:00:00');
-
-INSERT INTO `customers` (`id`, `nome`, `cpf_cnpj`, `birthdate`, `address`, 
-`hood`, `zip_code`, `city`, `state`, `phone`, `mobile`, `ie`, `created`, `modified`) 
-VALUES ('0', 'Fulano de Tal', '123.456.789-00', '1989-01-01', 'Rua da Web, 123', 
-'Internet', '1234568', 'Teste', 'Teste', '5555555', '55555555', '123456', 
-'2016-05-24 00:00:00', '2016-05-24 00:00:00');
-
 ALTER TABLE `wda`.`customers` 
 CHANGE COLUMN `mobile` `mobile` VARCHAR(13) NOT NULL ;
 
+INSERT INTO `customers` (`id`, `nome`, `cpf_cnpj`, `birthdate`, `address`, 
+`hood`, `zip_code`, `city`, `state`, `phone`, `mobile`, `ie`, `created`, `modified`) 
+VALUES ('0', 'Fulano de Tal', '123.456.789-00', '1989-01-01', 'Rua da Web, 123', 
+'Internet', '1234568', 'Teste', 'Teste', '5555555', '55555555', '123456', 
+'2016-05-24 00:00:00', '2016-05-24 00:00:00');
 
+INSERT INTO `customers` (`id`, `nome`, `cpf_cnpj`, `birthdate`, `address`, 
+`hood`, `zip_code`, `city`, `state`, `phone`, `mobile`, `ie`, `created`, `modified`) 
+VALUES ('0', 'Fulano de Tal', '123.456.789-00', '1989-01-01', 'Rua da Web, 123', 
+'Internet', '1234568', 'Teste', 'Teste', '5555555', '55555555', '123456', 
+'2016-05-24 00:00:00', '2016-05-24 00:00:00');
+
+INSERT INTO `titulos` (`id`, `nome`, `editora`, `categoria`, `genero`, `status`,`periodo`)
+VALUES ('0', 'Superman', 'Panini', 'mensal', 'Aventura', 'Em Circulacao', '1995-10-20');
+
+select * from `titulos`;
 select * from `customers`;
 desc `customers`;
