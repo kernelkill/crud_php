@@ -17,13 +17,13 @@
     </div>
 
     <div class="form-group col-md-3">
-      <label for="campo2">CNPJ / CPF</label>
-      <input type="text" class="form-control" name="customer['cpf_cnpj']">
+      <label for="campo2">CPF</label>
+      <input type="text" placeholder="012.345.678-99" class="form-control" name="customer['cpf_cnpj']">
     </div>
 
     <div class="form-group col-md-2">
       <label for="campo3">Data de Nascimento</label>
-      <input type="text" class="form-control" name="customer['birthdate']">
+      <input type="text" class="form-control" placeholder="AAAA-MM-DD" name="customer['birthdate']">
     </div>
   </div>
   
