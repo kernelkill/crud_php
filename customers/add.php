@@ -1,6 +1,7 @@
 <?php 
   require_once('functions.php'); 
   add();
+  
   //Essa Função faz com que seja recuperada todas as informaçoes dentro da tabela categorias.
   listaCategorias();
 ?>
