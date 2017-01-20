@@ -1,7 +1,7 @@
 <?php 
   require_once('functions.php'); 
   add();
-  
+
   //Essa Função faz com que seja recuperada todas as informaçoes dentro da tabela categorias.
   listaCategorias();
 ?>
@@ -78,15 +78,15 @@
       <input type="text" class="form-control" name="customer['ie']">
     </div>
 
-    <?php
-    foreach ($categorias as $categoria) {
-      
-      echo $categoria['id'];
-      echo $categoria['nome'];
-
-      }
-    ?>
-  
+    <div class="form-group col-md-4">
+    <label>Categoria</label>
+    <select class="selectpicker">
+      <?php foreach ($categorias as $categoria) : ?>
+       <option value="<?php echo $categoria['id']?>" > <?= $categoria['nome'] ?> </option>
+    <?php endforeach ?></select>
+    </div>
+  </div>
+    
   <div id="actions" class="row">
     <div class="col-md-12">
       <button type="submit" class="btn btn-primary">Salvar</button>
