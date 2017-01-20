@@ -6,6 +6,24 @@
 	$customers = null;
 	$customer = null;
 
+  $categorias = null; //Essa variavel tem relação com o nome da tabela.
+  $categoria = null;  //Essa Variavel é atribuida 1 unica categoria.
+
+/**
+*Listagem de Categorias
+*
+*/
+function listaCategorias(){ 
+  global $categorias;
+  $categorias = find_all('categorias');
+}
+
+function viewLista($id = null){
+  global $categoria;
+  $categoria = find('categorias', $id);
+}
+
+
 /**
 *  Listagem de Clientes
 */

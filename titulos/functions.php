@@ -11,3 +11,4 @@ function index() {
 	global $titulos;
 	$titulos = find_all('titulos');
 }
+

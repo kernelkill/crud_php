@@ -1,6 +1,8 @@
 <?php 
   require_once('functions.php'); 
   add();
+  //Essa Função faz com que seja recuperada todas as informaçoes dentro da tabela categorias.
+  listaCategorias();
 ?>
 
 <?php include(HEADER_TEMPLATE); ?>
@@ -74,12 +76,15 @@
       <label for="campo3">Inscrição Estadual</label>
       <input type="text" class="form-control" name="customer['ie']">
     </div>
-    
-    <!--<div class="form-group col-md-2">
-      <label for="campo3">UF</label>
-      <input type="text" class="form-control">
-    </div>
-  </div>-->
+
+    <?php
+    foreach ($categorias as $categoria) {
+      
+      echo $categoria['id'];
+      echo $categoria['nome'];
+
+      }
+    ?>
   
   <div id="actions" class="row">
     <div class="col-md-12">
