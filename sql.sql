@@ -57,3 +57,5 @@ VALUES ('0', 'Superman', 'Panini', 'mensal', 'Aventura', 'Em Circulacao', '1995-
 select * from `titulos`;
 select * from `customers`;
 desc `customers`;
+
+show tables;
