@@ -67,7 +67,16 @@ function find( $table = null, $id = null ) {
 
 	close_database($database);
 
+<<<<<<< HEAD
 	return $found;
+=======
+/**
+ *  Pesquisa Todos os Registros de uma Tabela
+ */
+function find_all( $table ) {
+  return find($table);
+  //esse carinha aqui é que faz as busca no banco de dados
+>>>>>>> 2c5e6f5fe5f443062121b8a373674e6bc22038c7
 }
 
 /**

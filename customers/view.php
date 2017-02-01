@@ -1,6 +1,7 @@
 <?php 
 	require_once('functions.php'); 
 	view($_GET['id']);
+	//Nada mudado
 ?>
 
 <?php include(HEADER_TEMPLATE); ?>

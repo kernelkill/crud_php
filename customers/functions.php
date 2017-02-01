@@ -19,6 +19,9 @@ function index() {
 //$categorias = null; //Essa variavel tem relação com o nome da tabela.
 //$categoria = null;  //Essa Variavel é atribuida 1 unica categoria.
 
+//Nada de auteraçao aqui
+//Fazendo Teste
+
 /**
  *Listagem de Categorias
  *
@@ -39,6 +42,15 @@ function viewLista($id = null)
 /**
  *  Listagem de Clientes
  */
+<<<<<<< HEAD
+=======
+function index()
+{
+    global $customers;
+    $customers = find_all('customers');
+    //Ele lista aqui toda a tabela.
+}
+>>>>>>> 2c5e6f5fe5f443062121b8a373674e6bc22038c7
 
 
 /**
@@ -48,7 +60,11 @@ function view($id = null)
 {
     global $customer;
     $customer = find('customers', $id);
+<<<<<<< HEAD
 
+=======
+    //E aqui ele tras por ID.
+>>>>>>> 2c5e6f5fe5f443062121b8a373674e6bc22038c7
 }
 
 /**
