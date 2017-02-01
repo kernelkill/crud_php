@@ -21,6 +21,14 @@ function close_database($conn) {
 }
 
 /**
+ *  Pesquisa Todos os Registros de uma Tabela
+ */
+function find_all( $table ) {
+    return find($table);
+}
+
+
+/**
  *  Pesquisa um Registro pelo ID em uma Tabela
  */
 function find( $table = null, $id = null ) {
@@ -35,38 +43,32 @@ function find( $table = null, $id = null ) {
 	    if ($result->num_rows > 0) {
 	      $found = $result->fetch_assoc();
 	    }
-	    
+
 	  } else {
 	    
 	    $sql = "SELECT * FROM " . $table;
 	    $result = $database->query($sql);
-	    
+          //print_r($result);
 	    if ($result->num_rows > 0) {
 	      $found = $result->fetch_all(MYSQLI_ASSOC);
-        
+            ;
         /* Metodo alternativo
         $found = array();
         while ($row = $result->fetch_assoc()) {
           array_push($found, $row);
         } */
+
 	    }
 	  }
 	} catch (Exception $e) {
 	  $_SESSION['message'] = $e->GetMessage();
 	  $_SESSION['type'] = 'danger';
   }
-	
+
 	close_database($database);
+
 	return $found;
 }
-
-/**
- *  Pesquisa Todos os Registros de uma Tabela
- */
-function find_all( $table ) {
-  return find($table);
-}
-
 
 /**
 *  Insere um registro no BD

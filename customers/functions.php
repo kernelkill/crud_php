@@ -6,15 +6,24 @@ require_once(DBAPI);
 $customers = null;
 $customer = null;
 
+
+/**
+ *  Listagem de Clientes
+ */
+function index() {
+    global $customers;
+    $customers = find_all('customers');
+}
+
 //Aqui começa a acessar a tabela Categorias
-$categorias = null; //Essa variavel tem relação com o nome da tabela.
-$categoria = null;  //Essa Variavel é atribuida 1 unica categoria.
+//$categorias = null; //Essa variavel tem relação com o nome da tabela.
+//$categoria = null;  //Essa Variavel é atribuida 1 unica categoria.
 
 /**
  *Listagem de Categorias
  *
  */
-function listaCategorias()
+/*function listaCategorias()
 {
     global $categorias;
     $categorias = find_all('categorias');
@@ -24,17 +33,12 @@ function viewLista($id = null)
 {
     global $categoria;
     $categoria = find('categorias', $id);
-}
+}*/
 
 
 /**
  *  Listagem de Clientes
  */
-function index()
-{
-    global $customers;
-    $customers = find_all('customers');
-}
 
 
 /**
@@ -44,6 +48,7 @@ function view($id = null)
 {
     global $customer;
     $customer = find('customers', $id);
+
 }
 
 /**
@@ -60,7 +65,7 @@ function add()
         $customer['modified'] = $customer['created'] = $today->format("Y-m-d H:i:s");
 
         save('customers', $customer);
-        header('location: index.php');
+        header('location: add.php');
     }
 }
 
