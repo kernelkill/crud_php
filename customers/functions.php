@@ -10,6 +10,8 @@ $customer = null;
 $categorias = null; //Essa variavel tem relação com o nome da tabela.
 $categoria = null;  //Essa Variavel é atribuida 1 unica categoria.
 
+//Nada de auteraçao aqui
+
 /**
  *Listagem de Categorias
  *

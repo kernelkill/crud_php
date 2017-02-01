@@ -1,7 +1,7 @@
 <?php
     require_once('functions.php');
     index();
-    //Nada de novo até aqui
+    //Nada de novo até aqui, mandando bala.
 ?>
 
 <?php include('modal.php'); ?>
