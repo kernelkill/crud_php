@@ -65,6 +65,7 @@ function find( $table = null, $id = null ) {
  */
 function find_all( $table ) {
   return find($table);
+  //esse carinha aqui é que faz as busca no banco de dados
 }
 
 

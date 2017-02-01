@@ -37,6 +37,7 @@ function index()
 {
     global $customers;
     $customers = find_all('customers');
+    //Ele lista aqui toda a tabela.
 }
 
 
@@ -47,6 +48,7 @@ function view($id = null)
 {
     global $customer;
     $customer = find('customers', $id);
+    //E aqui ele tras por ID.
 }
 
 /**
