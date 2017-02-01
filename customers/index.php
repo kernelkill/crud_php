@@ -1,6 +1,7 @@
 <?php
     require_once('functions.php');
     index();
+    //Nada de novo até aqui
 ?>
 
 <?php include('modal.php'); ?>
