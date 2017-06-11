@@ -21,62 +21,53 @@ function close_database($conn) {
 }
 
 /**
- *  Pesquisa Todos os Registros de uma Tabela
- */
-function find_all( $table ) {
-    return find($table);
-}
-
-
-/**
  *  Pesquisa um Registro pelo ID em uma Tabela
  */
-function find( $table = null, $id = null ) {
-  
-	$database = open_database();
-	$found = null;
-	try {
-	  if ($id) {
-	    $sql = "SELECT * FROM " . $table . " WHERE id = " . $id;
-	    $result = $database->query($sql);
-	    
-	    if ($result->num_rows > 0) {
-	      $found = $result->fetch_assoc();
-	    }
+function find( $table = null, $id = null )
+{
 
-	  } else {
-	    
-	    $sql = "SELECT * FROM " . $table;
-	    $result = $database->query($sql);
-          //print_r($result);
-	    if ($result->num_rows > 0) {
-	      $found = $result->fetch_all(MYSQLI_ASSOC);
-            ;
-        /* Metodo alternativo
-        $found = array();
-        while ($row = $result->fetch_assoc()) {
-          array_push($found, $row);
-        } */
+    $database = open_database();
+    $found = null;
+    try {
+        if ($id) {
+            $sql = "SELECT * FROM " . $table . " WHERE id = " . $id;
+            $result = $database->query($sql);
 
-	    }
-	  }
-	} catch (Exception $e) {
-	  $_SESSION['message'] = $e->GetMessage();
-	  $_SESSION['type'] = 'danger';
-  }
+            if ($result->num_rows > 0) {
+                $found = $result->fetch_assoc();
+            }
 
-	close_database($database);
+        } else {
 
-<<<<<<< HEAD
-	return $found;
-=======
+            $sql = "SELECT * FROM " . $table;
+            $result = $database->query($sql);
+            //print_r($result);
+            if ($result->num_rows > 0) {
+                $found = $result->fetch_all(MYSQLI_ASSOC);;
+                /* Metodo alternativo
+                $found = array();
+                while ($row = $result->fetch_assoc()) {
+                  array_push($found, $row);
+                } */
+
+            }
+        }
+    } catch (Exception $e) {
+        $_SESSION['message'] = $e->GetMessage();
+        $_SESSION['type'] = 'danger';
+    }
+
+    close_database($database);
+
+    return $found;
+
+}
 /**
  *  Pesquisa Todos os Registros de uma Tabela
  */
 function find_all( $table ) {
   return find($table);
   //esse carinha aqui é que faz as busca no banco de dados
->>>>>>> 2c5e6f5fe5f443062121b8a373674e6bc22038c7
 }
 
 /**
@@ -91,6 +82,7 @@ function save($table = null, $data = null) {
     $columns .= trim($key, "'") . ",";
     $values .= "'$value',";
   }
+
   
   // remove a ultima virgula
   $columns = rtrim($columns, ',');

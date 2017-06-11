@@ -7,14 +7,6 @@ $customers = null;
 $customer = null;
 
 
-/**
- *  Listagem de Clientes
- */
-function index() {
-    global $customers;
-    $customers = find_all('customers');
-}
-
 //Aqui começa a acessar a tabela Categorias
 //$categorias = null; //Essa variavel tem relação com o nome da tabela.
 //$categoria = null;  //Essa Variavel é atribuida 1 unica categoria.
@@ -42,16 +34,12 @@ function viewLista($id = null)
 /**
  *  Listagem de Clientes
  */
-<<<<<<< HEAD
-=======
 function index()
 {
     global $customers;
     $customers = find_all('customers');
     //Ele lista aqui toda a tabela.
 }
->>>>>>> 2c5e6f5fe5f443062121b8a373674e6bc22038c7
-
 
 /**
  *  Visualização de um Cliente
@@ -60,11 +48,7 @@ function view($id = null)
 {
     global $customer;
     $customer = find('customers', $id);
-<<<<<<< HEAD
-
-=======
     //E aqui ele tras por ID.
->>>>>>> 2c5e6f5fe5f443062121b8a373674e6bc22038c7
 }
 
 /**
